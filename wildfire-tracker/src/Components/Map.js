@@ -3,7 +3,13 @@ import LocationMarker from './LocationMarker'
 
 
 
-const Map = ({center, zoom})=> {
+const Map = ({eventData, center, zoom})=> {
+    const markers = eventData.map(ev =>{
+        if(ev.categories[0].id === 8){
+           return <LocationMarker key ={ev.id} lat={ev.geometries[0].coordinates[1]} lng={ev.geometries[0].coordinates[0]}></LocationMarker>
+        }
+        return null
+    })
     return (
         <div className="map">
             <GoogleMapReact
@@ -11,7 +17,7 @@ const Map = ({center, zoom})=> {
                defaultCenter={center}
                defaultZoom={zoom}
             >
-            <LocationMarker lat={center.lat} lng={center.lng}></LocationMarker>
+            {markers}
             </GoogleMapReact>
         
 
