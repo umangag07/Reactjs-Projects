@@ -33,10 +33,10 @@ const Map = ({eventData, center, zoom})=> {
 }
 Map.defaultProps = {
     center:{
-        lat:20.5937,
-        lng:78.9629
+        lat:44.500000,
+        lng:-89.500000
     },
-    zoom:6
+    zoom:4
 }
 
 export default Map

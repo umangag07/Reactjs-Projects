@@ -2,6 +2,7 @@ import Map from './Components/Map'
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 import Loader from './Components/Loader'
+import Header from './Components/Header'
 
 function App() {
   const [eventData, seteventData] = useState([])
@@ -28,6 +29,7 @@ function App() {
   },[])
   return (
     <div>
+      <Header/>
      { !loading ?<Map eventData={eventData}></Map>:<Loader/>}
     </div>
   );
