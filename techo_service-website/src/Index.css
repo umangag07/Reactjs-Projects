@@ -32,3 +32,7 @@
     border-radius: 50px;
     transition: 0.6s;
 }
+.tab-center {
+    text-align: center;
+    color: rgb(6, 73, 175) !important;
+}
