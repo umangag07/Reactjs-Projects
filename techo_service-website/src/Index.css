@@ -1,4 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 .navbar{
     background-color: white;
+    font-family: 'Quicksand', sans-serif;
 }
+.navbar-brand{
+    font-size: xx-large;
+    color:rgb(16, 165, 252) !important;
+}
+.menu_item{
+    font-weight: bolder;
+}
+.navbar a{
+    text-transform: capitalize;
+    color: rgb(8, 109, 168) !important;
+}
+.navbar-nav a:hover{
+    color: rgb(1, 71, 71) !important;
+}
+

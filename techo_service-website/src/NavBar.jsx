@@ -1,5 +1,7 @@
 import React from "react";
-import Service from "./Service";
+import './Index.css'
+import {NavLink} from 'react-router-dom'
+
 
 const Navbar = () => {
   return (
@@ -9,9 +11,10 @@ const Navbar = () => {
           <div className='col-10 mx-auto'>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <div className="container-fluid">
-                <a className="navbar-brand" href="#">
-                  Navbar
-                </a>
+              
+                <NavLink  className="navbar-brand text-primary" exact to="/">
+                  TechoService
+                </NavLink>
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -29,31 +32,34 @@ const Navbar = () => {
                 >
                   <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <a
+                      <NavLink
+                      activeClassName="menu_item"
                         className="nav-link active"
                         aria-current="page"
-                        href="#"
+                        exact to="/"
                       >
                         Home
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href={Service}>
+                      <NavLink activeClassName="menu_item" className="nav-link" exact to="/services" >
                         Services
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <NavLink activeClassName="menu_item" className="nav-link" exact to="/about">
                         About
-                      </a>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">
+                      <NavLink activeClassName="menu_item" className="nav-link" exact to="/contact" >
                         Contact
-                      </a>
+                      </NavLink>
+                     
                     </li>
                   </ul>
                 </div>
+               
               </div>
             </nav>
           </div>

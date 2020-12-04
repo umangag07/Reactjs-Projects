@@ -12,8 +12,9 @@ import Navbar from "./NavBar";
 const App = () => {
   return (
     <>
-    <Navbar/>
+    
       <Router>
+      <Navbar/>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
