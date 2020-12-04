@@ -14,7 +14,7 @@ function App() {
         .then(request=>{
           setloading(true) 
           seteventData(request.data.events)
-          //console.log( request.data.events)
+          console.log( request.data.events)
           //console.log(eventData)
           setloading(false) 
         })

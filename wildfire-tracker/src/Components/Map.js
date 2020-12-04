@@ -4,6 +4,7 @@ import {useState} from 'react'
 import FireInfo from './FireInfo'
 
 
+
 const Map = ({eventData, center, zoom})=> {
     const [fireinfo,setfireinfo] = useState(null)
     const markers = eventData.map(ev =>{
@@ -15,6 +16,8 @@ const Map = ({eventData, center, zoom})=> {
            Onclick={()=>setfireinfo({id:ev.id, title:ev.title} )}></LocationMarker>
         }
         return null
+        
+         
     })
     return (
         <div className="map">
