@@ -12,7 +12,7 @@ const Contact = () => {
       </div>
       <div className="container contacts">
         <div className="row">
-          <div className="col-md-6 col-10 mx-left">
+          <div className="col-md-6 col-12 pl-lg-3 order-2 order-lg-1  mx-center">
             <form action="/" onSubmit={handleSubmit}>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Name</label>
@@ -56,7 +56,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="col-lg-4 order-2 order-lg-1 mt-2 ml-lg-2 d-flex justify-content-center flex-column">
+          <div className="col-lg-4 order-1 order-lg-2 mt-2 ml-lg-2 d-flex justify-content-center flex-column">
             <img
               src={contact_us}
               className="img-animation"

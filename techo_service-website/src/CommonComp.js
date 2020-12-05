@@ -10,7 +10,7 @@ const CommonComp = (props) => {
           <div className="row">
             <div className="col-10 mx-auto">
               <div className="row">
-              <div className="col-md-6 pt-7 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
+              <div className="col-md-6 pt-5 pl-lg-2 order-2 order-lg-1  flex-column content">
                 <h3 className="mt-5">
                 {props.name}
                   <strong className="navbar-brand-content">
@@ -26,7 +26,7 @@ const CommonComp = (props) => {
                   </NavLink>
                 </div>
               </div>
-              <div className="col-lg-4 order-2 order-lg-1 mt-2  d-flex justify-content-center flex-column header-img">
+              <div className="col-lg-4 order-1 order-lg-2 mt-2  d-flex justify-content-center flex-column header-img">
                 <div className="animate__animated animate__pulse animate__infinite">
                   <img src={props.imgsrc} className="img-animation" width="500px" height="500px" alt="img"/>
                 </div>
