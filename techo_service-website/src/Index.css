@@ -40,17 +40,17 @@
      
     margin-bottom: 22px;
 }
- img{
+img{
     max-width: 500px;
     min-width: 100px;
     max-height: 500px;
     min-height: 100px;
     
 }
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 515px) {
     img{
         max-width:290px;
-        max-height:250px;
+        max-height:200px;
     }
   }
  
