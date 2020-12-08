@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import teamImg from '../../Assets/photos/Team.jpg'
+import teamImg from '../../Assets/photos/company_team.jpg'
 import { Indexlogo } from "../../Components/Logo/Indexlogo";
-
+import { Marginer } from "../../Components/Marginer/Index";
+import { theme } from '../../styles';
 
 const TopContainer = styled.div`
   width: 100%;
@@ -19,13 +20,25 @@ const BgEffect = styled.div`
   align-items:center; 
 `;
 
+const Openingtext = styled.h1`
+   font-size:32px;
+   font-weight:bold;
+   margin:0;
+   color:${theme.color1};
+`;
 
 export function TopSection(props) {
   return (
     <>
      <TopContainer>
        <BgEffect>
+         <Marginer direction="vertical" margin="9em"/>
          <Indexlogo/>
+         <Marginer direction="vertical" margin="3em"/>
+         <Openingtext>Reach Out To Millions By Taking Your Business Online</Openingtext>
+         <Marginer direction="vertical" margin="1em"/>
+         <Openingtext>We Have Experience Developers For Every</Openingtext>
+         <Openingtext>Online Service</Openingtext>
        </BgEffect>
      </TopContainer>
     </>
