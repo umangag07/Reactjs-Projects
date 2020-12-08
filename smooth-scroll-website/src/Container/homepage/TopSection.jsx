@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import teamImg from '../../Assets/photos/company_team.jpg'
-import { Indexlogo } from "../../Components/Logo/Indexlogo";
-import { Marginer } from "../../Components/Marginer/Index";
+import { Button } from "../../Components/button/Index";
+import { Indexlogo } from "../../Components/Logo/Indexlogo.jsx";
+import { Marginer } from "../../Components/Marginer/Index.jsx";
 import { theme } from '../../styles';
 
 const TopContainer = styled.div`
@@ -22,7 +23,7 @@ const BgEffect = styled.div`
 
 const Openingtext = styled.h1`
    font-size:32px;
-   font-weight:bold;
+  
    margin:0;
    color:${theme.color1};
 `;
@@ -39,6 +40,8 @@ export function TopSection(props) {
          <Marginer direction="vertical" margin="1em"/>
          <Openingtext>We Have Experience Developers For Every</Openingtext>
          <Openingtext>Online Service</Openingtext>
+         <Marginer direction="vertical" margin="4em"/>
+         <Button>Start Your Project</Button>
        </BgEffect>
      </TopContainer>
     </>
