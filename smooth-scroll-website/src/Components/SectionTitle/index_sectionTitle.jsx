@@ -5,6 +5,7 @@ export  const SectionTitle = styled.h1`
     font-size:36px;
     color:${theme.color2};
     font-weight:bold;
+    margin-top:0px;
 `;
 
 
