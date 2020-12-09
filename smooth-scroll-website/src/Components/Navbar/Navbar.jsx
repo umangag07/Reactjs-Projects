@@ -29,8 +29,8 @@ export function Navbar(props){
   return(
       <NavbarConatiner>
           <BrandConatiner><Indexlogo inline/></BrandConatiner>
-          <ButtonsConatiner><Button size="13.5" height="30" padding="2px 14px">Get Started</Button></ButtonsConatiner>
-          <ButtonsConatiner><Button size="13.5" height="30" padding="2px 19px">Login</Button></ButtonsConatiner>
+          <ButtonsConatiner><Button size="13.5" height="35" padding="2px 14px">Get Started</Button></ButtonsConatiner>
+          <ButtonsConatiner><Button size="13.5" height="35" padding="2px 19px">Login</Button></ButtonsConatiner>
       </NavbarConatiner>
   )
 }
