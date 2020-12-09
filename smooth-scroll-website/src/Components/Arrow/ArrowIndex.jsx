@@ -14,6 +14,7 @@ const ArrowConatiner = styled.div`
   align-items: center;
   flex-direction: column;
   border:15px solid transparent;
+  cursor:pointer;
   transition:all 500ms ease-in-out;
   &:hover{
       border:2px solid ${theme.color2}
