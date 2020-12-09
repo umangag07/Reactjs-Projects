@@ -5,6 +5,7 @@ import { Arrow } from "../../Components/Arrow/ArrowIndex";
 import { Button } from "../../Components/button/Index";
 import { Indexlogo } from "../../Components/Logo/Indexlogo.jsx";
 import { Marginer } from "../../Components/Marginer/Index.jsx";
+import { Navbar } from "../../Components/Navbar/Navbar";
 import { theme } from '../../styles';
 
 const TopContainer = styled.div`
@@ -34,6 +35,7 @@ export function TopSection(props) {
     <>
      <TopContainer>
        <BgEffect>
+         <Navbar/>
          <Marginer direction="vertical" margin="9em"/>
          <Indexlogo/>
          <Marginer direction="vertical" margin="3em"/>
