@@ -8,7 +8,7 @@ const ButtonWrapper = styled.button`
     border-radius:19px;
     border:3px solid ${theme.color2}; 
     background-color:${theme.color2} ;
-    color:${theme.color5};
+    color:${theme.color1};
     font-size:${({size})=>size ? size+"px" :"16px"};
     transition: all 200ms ease-in-out;
     cursor:pointer;
