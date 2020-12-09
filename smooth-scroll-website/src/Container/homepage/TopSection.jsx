@@ -18,7 +18,7 @@ const TopContainer = styled.div`
 const BgEffect = styled.div`
   width: 100%;
   height: 100%;
-  background-color: rgba(55, 89, 90, 0.45);
+  background-color: rgba(55, 89, 90, 0.69);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +36,7 @@ const ArrowConatiner = styled.div`
 
 export function TopSection(props) {
   const ScrollToNextSection = () => {
-    scroller.scrollTo("ServiceSection", { smooth: true, duration: 1500 });
+    scroller.scrollTo("ServiceSection", { smooth: true, duration: 1100 });
   };
   return (
     <>
