@@ -10,21 +10,24 @@ const LogoContainer = styled.div`
 `; 
 
 const LogoImg = styled.img`
-    width:8em;
-    height:7em;
+    width: ${({inline}) => inline ? "40px":"8em" };
+    height: ${({inline}) => inline ? "40px":"7em" };
+    
 `;
 
 const Logotext = styled.div`
-   font-size: 40px;
-   margin-top:20px;
+   font-size: ${({inline}) => inline ? "20px":"40px" };
+   margin-top:${({inline}) => inline ? "8px":"20px" };
+   margin-left:10px;
    color:${theme.color1};
    font-weight:bold;
 `;
 export function Indexlogo(props) {
+    const {inline} = props;
     return (
-        <LogoContainer>
-            <LogoImg src={SiteLogo}/>
-            <Logotext>EasyOnline</Logotext>
+        <LogoContainer inline={inline}>
+            <LogoImg src={SiteLogo} inline={inline}/>
+            <Logotext inline={inline}>EasyOnline</Logotext>
         </LogoContainer>
     )
 }
