@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import teamImg from '../../Assets/photos/company_team.jpg'
+import { Arrow } from "../../Components/Arrow/ArrowIndex";
 import { Button } from "../../Components/button/Index";
 import { Indexlogo } from "../../Components/Logo/Indexlogo.jsx";
 import { Marginer } from "../../Components/Marginer/Index.jsx";
@@ -42,6 +43,8 @@ export function TopSection(props) {
          <Openingtext>Online Service</Openingtext>
          <Marginer direction="vertical" margin="4em"/>
          <Button>Start Your Project</Button>
+         <Marginer direction="vertical" margin="6em"/>
+         <Arrow/>
        </BgEffect>
      </TopContainer>
     </>
