@@ -5,13 +5,15 @@ import styled from "styled-components";
 import { Marginer } from "../../Components/Marginer/Index";
 import { CardIndex } from "../../Components/ReviewCard/CardIndex";
 import { SectionTitle } from "../../Components/SectionTitle/index_sectionTitle";
-
+import 'pure-react-carousel/dist/react-carousel.es.css';
 const ReviewContainer = styled(Element)`
   min-height: 700px;
   display: flex;
-  flex-direction: column;
-  justify-content:center;
+  flex-direction: column;;
   align-items:center;
+`;
+const StyledCarousalProvider = styled(CarouselProvider)`
+    width:50%;
 `;
 
 export function ReviewSection() {
@@ -19,7 +21,7 @@ export function ReviewSection() {
     <ReviewContainer name="ReviewConatiner">
       <SectionTitle>Reviews About Us</SectionTitle>
       <Marginer direction="vertical" margin="4em" />
-      <CarouselProvider
+      <StyledCarousalProvider
        naturalSlideHeight={300}
        naturalSlideWidth={200}
        totalSlides={3}
@@ -30,7 +32,7 @@ export function ReviewSection() {
           <Slide index={2}><CardIndex/></Slide>
       </Slider>
      
-      </CarouselProvider>
+      </StyledCarousalProvider>
      
     </ReviewContainer>
   );
