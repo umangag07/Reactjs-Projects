@@ -26,13 +26,16 @@ const StyledCarousalProvider = styled(CarouselProvider)`
   width: 70%; 
 `;
 const StyledSlide = styled(Slide)`
-  width: 70%;
+ .carousel__dot--selected {
+     display:flex;
+     justify-content:center;    
+ }
 `;
 const StyledDotGroup = styled(DotGroup)`
   button {
     width: 2px;
     height: 5px;
-    border-radius: 50%;
+    border-radius: 30%;
     outline: none;
     margin-top: 10px;
     border: 0px;
@@ -42,8 +45,9 @@ const StyledDotGroup = styled(DotGroup)`
     }
   }
   .carousel__dot--selected {
-    background-color: rgb(53, 53, 53);
+    background-color: ${theme.color2};
     justify-content:center;
+    padding-bottom:0px;
   }
 `;
 
@@ -51,26 +55,26 @@ export function ReviewSection() {
   return (
     <ReviewContainer name="ReviewConatiner">
       <SectionTitle>Reviews About Us</SectionTitle>
-      <Marginer direction="vertical" margin="4em" />
+      <Marginer direction="vertical" margin="2em" />
       <StyledCarousalProvider
-        naturalSlideHeight={230}
+        naturalSlideHeight={240}
         naturalSlideWidth={200}
         totalSlides={4}
         visibleSlides={2}
       >
         <Slider>
-          <Slide index={0}>
+          <StyledSlide index={0}>
             <CardIndex />
-          </Slide>
-          <Slide index={1}>
+          </StyledSlide>
+          <StyledSlide index={1}>
             <CardIndex />
-          </Slide>
-          <Slide index={2}>
+          </StyledSlide>
+          <StyledSlide index={2}>
             <CardIndex />
-          </Slide>
-          <Slide index={3}>
+          </StyledSlide>
+          <StyledSlide index={3}>
             <CardIndex />
-          </Slide>
+          </StyledSlide>
         </Slider>
         <StyledDotGroup />
       </StyledCarousalProvider>
