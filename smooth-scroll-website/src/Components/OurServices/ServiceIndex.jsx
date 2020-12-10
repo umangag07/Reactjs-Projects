@@ -16,17 +16,19 @@ const ServiceContain = styled.div`
     margin-right:1vh;
   }
   @media (max-width:415px){
+    @media (min-width:377px){
     display:flex;
     flex-direction:column;
     margin-left:1vh;
     margin-right:1vh;
-  }
+  }}
   @media (max-width:801px){
+    @media (min-width:416px){
     display:flex;
     flex-direction:column;
     margin-left:1vh;
     margin-right:1vh;
-  }
+  }}
     
   
   
@@ -41,18 +43,22 @@ const ServiceImg = styled.img`
   order:${({order})=> order? 1 : 2};
   @media (max-width:376px){
     order:1;
+    margin-left:25px;
+    margin-right:25px;
   }
   @media (max-width:415px){
+    @media (min-width:377px){
     order:1;
     margin-left:45px;
-  }
+  }}
   @media (max-width:801px){
+    @media (min-width:416px){
     order:1;
     margin-left:18vh;
     margin-right:18vh;
     width: 24em;
     height: 24em;
-  }
+  }}
  
      
 `;
@@ -69,14 +75,16 @@ const ServiceDescription = styled.div`
     margin-left:0px;
   }
   @media (max-width:415px){
+    @media (min-width:377px){
     order:2;
     width:100%;
-  }  
+  } } 
   @media (max-width:801px){
+    @media (min-width:416px){
     order:2;
     width:100%;
     
-  }
+  }}
   
 `;
 
