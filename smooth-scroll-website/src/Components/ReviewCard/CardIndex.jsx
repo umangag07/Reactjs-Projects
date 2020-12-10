@@ -1,61 +1,76 @@
-import React from 'react'
-import styled from 'styled-components'
-import { theme } from '../../styles';
-import { Marginer } from '../Marginer/Index';
-
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import styled from "styled-components";
+import { theme } from "../../styles";
+import { Marginer } from "../Marginer/Index";
 
 const ReviewCardConatainer = styled.div`
-    width:370px;
-    height:500px;
-    background-color:${theme.color1};
-    box-shadow: 0px 0px 10px rgba(88, 80, 80, 0.3);
-    border-radius:5px;
-    margin: 5px 2em;
-    position:relative;
+  width: 370px;
+  height: 500px;
+  background-color: ${theme.color1};
+  box-shadow: 0px 0px 10px rgba(88, 80, 80, 0.3);
+  border-radius: 5px;
+  margin: 5px 2em;
+  position: relative;
 `;
 
 const QuoteIcon = styled.div`
-    position:absolute;
-    top:10px;
-    left:15px;
-    font-size:30px;
-    color:${theme.color5};
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 30px;
+  color: ${theme.color5};
 `;
 const Reviewtext = styled.p`
-    position:absolute;
-    font-size:18px;
-    color:${theme.color2};
-    padding-left:12px;
-    padding-right:13px;
+  position: absolute;
+  font-size: 18px;
+  color: ${theme.color2};
+  padding-left: 12px;
+  padding-right: 13px;
 `;
 const Line = styled.span`
-  min-width:80%;
-  min-height:1px;
-  display:flex;
-  background-color:${theme.color5};
-  margin-top:20px;
-  margin-bottom:5px;
+  min-width: 80%;
+  min-height: 1px;
+  display: flex;
+  background-color: ${theme.color5};
+  margin-top: 20px;
+  margin-bottom: 5px;
+`;
+const UserDetail = styled.div`
+  display: flex;
+`;
+const UserImg = styled.img`
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  padding:2px;
+  background-color: ${theme.color5};
+`;
+const UserName = styled.p`
+  font-size: 16px;
+  margin-left: 15px;
+  color: ${theme.color2};
 `;
 
-const UserImg  = styled.img`
-
-`;
-
-export function CardIndex() {
-    return <>
-    <ReviewCardConatainer>
-        <QuoteIcon>Q</QuoteIcon>
-        <Marginer direction="vertical" margin="6em"/>
-        <Reviewtext>I have been using this site from quite a few months now, develoeprs here are really good.
-            Mostly they are patient enough to listen to our ideas.
-            I have been using this site from quite a few months now, develoeprs here are really good.
-            Mostly they are patient enough to listen to our ideas.
-            I have been using this site from quite a few months now, develoeprs here are really good.
-            Mostly they are patient enough to listen to our ideas.
-        </Reviewtext>
-        <Marginer direction="vertical" margin="18em"/>
-        <Line/>
-    </ReviewCardConatainer>
+export function CardIndex(props) {
+  const { Review, Name, ImgUrl } = props;
+  return (
+    <>
+      <ReviewCardConatainer>
+        <QuoteIcon>
+          <FontAwesomeIcon icon={faQuoteLeft} />
+        </QuoteIcon>
+        <Marginer direction="vertical" margin="4em" />
+        <Reviewtext>{Review}</Reviewtext>
+        <Marginer direction="vertical" margin="19em" />
+        <Line />
+        <UserDetail>
+          <UserImg src={ImgUrl} />
+          <UserName>{Name}</UserName>
+        </UserDetail>
+      </ReviewCardConatainer>
     </>
+  );
 }
-

@@ -14,6 +14,10 @@ import { CardIndex } from "../../Components/ReviewCard/CardIndex";
 import { SectionTitle } from "../../Components/SectionTitle/index_sectionTitle";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { theme } from "../../styles";
+import User1 from '../../Assets/Logo/User1.svg'
+import User2 from '../../Assets/Logo/User2.svg'
+import User3 from '../../Assets/Logo/User3.svg'
+import User4 from '../../Assets/Logo/User4.svg'
 const ReviewContainer = styled(Element)`
   min-height: 700px;
   display: flex;
@@ -64,16 +68,43 @@ export function ReviewSection() {
       >
         <Slider>
           <StyledSlide index={0}>
-            <CardIndex />
+            <CardIndex 
+            Review={`I have been using this site from quite a few months now, develoeprs here are really good.
+                Mostly they are patient enough to listen to our ideas.
+                I have been using this site from quite a few months now, develoeprs here are really good.
+                Mostly they are patient enough to listen to our ideas.
+                I have been using this site from quite a few months now, develoeprs here are really good.
+                Mostly they are patient enough to listen to our ideas.`}
+            Name={`Mike Jakon`}
+            ImgUrl={User1} />
           </StyledSlide>
           <StyledSlide index={1}>
-            <CardIndex />
+          <CardIndex 
+            Review={`I have been using this site from quite a few months now, develoeprs here are really good.
+            Mostly they are patient enough to listen to our ideas.
+            .`}
+            Name={`Jennifer Aniston`}
+            ImgUrl={User2} />
           </StyledSlide>
           <StyledSlide index={2}>
-            <CardIndex />
+          <CardIndex 
+            Review={`I have been using this site from quite a few months now, develoeprs here are really good.
+            Mostly they are patient enough to listen to our ideas.
+            I have been using this site from quite a few months now, develoeprs here are really good.
+           .`}
+            Name={'Nina Dobrev'}
+            ImgUrl={User3} />
           </StyledSlide>
           <StyledSlide index={3}>
-            <CardIndex />
+          <CardIndex 
+            Review={`I have been using this site from quite a few months now, develoeprs here are really good.
+            Mostly they are patient enough to listen to our ideas.
+            I have been using this site from quite a few months now, develoeprs here are really good.
+            Mostly they are patient enough to listen to our ideas.
+            I have been using this site from quite a few months now, develoeprs here are really good.
+            Mostly they are patient enough to listen to our ideas.`}
+            Name={'Mithila Palkar'}
+            ImgUrl={User4} />
           </StyledSlide>
         </Slider>
         <StyledDotGroup />
