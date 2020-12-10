@@ -4,6 +4,9 @@ import { theme } from "../../styles";
 
 const ServiceContain = styled.div`
   display: flex;
+  background-color: ${theme.color1};
+  box-shadow: 0px 0px 10px rgba(88, 80, 80, 0.6);
+  border-radius: 5px;
  
   margin-left:10vh;
   margin-right:10vh;
