@@ -3,15 +3,32 @@ import styled from "styled-components";
 import { theme } from "../../styles";
 
 const ServiceContain = styled.div`
-display: flex;
+  display: flex;
  
   margin-left:10vh;
   margin-right:10vh;
   justify-content:center;
   
-  
-    
+  @media (max-width:376px){
+    display:flex;
+    flex-direction:column;
+    margin-left:1vh;
+    margin-right:1vh;
   }
+  @media (max-width:415px){
+    display:flex;
+    flex-direction:column;
+    margin-left:1vh;
+    margin-right:1vh;
+  }
+  @media (max-width:801px){
+    display:flex;
+    flex-direction:column;
+    margin-left:1vh;
+    margin-right:1vh;
+  }
+    
+  
   
 
 `;
@@ -22,7 +39,20 @@ const ServiceImg = styled.img`
   margin-right:5vh;
  
   order:${({order})=> order? 1 : 2};
-  
+  @media (max-width:376px){
+    order:1;
+  }
+  @media (max-width:415px){
+    order:1;
+    margin-left:45px;
+  }
+  @media (max-width:801px){
+    order:1;
+    margin-left:18vh;
+    margin-right:18vh;
+    width: 24em;
+    height: 24em;
+  }
  
      
 `;
@@ -33,7 +63,20 @@ const ServiceDescription = styled.div`
   margin-right:5vh;
   width:60%;
   order:${({order})=> order? 2 : 1};
- 
+  @media (max-width:376px){
+    order:2;
+    width:100%;
+    margin-left:0px;
+  }
+  @media (max-width:415px){
+    order:2;
+    width:100%;
+  }  
+  @media (max-width:801px){
+    order:2;
+    width:100%;
+    
+  }
   
 `;
 
@@ -42,6 +85,7 @@ const Title = styled.h2`
   font-weight: 700;
   margin-bottom:0em;
   text-align:center;
+  font-size:30px;
   
 `;
 const Description = styled.p`
