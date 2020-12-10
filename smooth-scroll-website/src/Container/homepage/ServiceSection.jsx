@@ -2,7 +2,7 @@ import React from 'react'
 import { Element } from 'react-scroll';
 import styled from 'styled-components'
 import { Marginer } from '../../Components/Marginer/Index';
-import { Service_index } from '../../Components/OurServices/Service_index';
+import { ServiceIndex } from '../../Components/OurServices/ServiceIndex';
 import {SectionTitle} from '../../Components/SectionTitle/index_sectionTitle'
 
 import MobileApplication from '../../Assets/illustrations/Mobile_application.svg'
@@ -22,8 +22,8 @@ const ServiceContainer = styled(Element)`
 export function ServiceSection(props){
     return( <ServiceContainer name="ServiceSection">
         <SectionTitle>Our Services</SectionTitle>
-        <Marginer direction="vertical" margin="3em" ></Marginer>
-        <Service_index
+        <Marginer direction="vertical" margin="5em" ></Marginer>
+        <ServiceIndex
          title="Mobile Programming"
          description="You will get your app customised for your needs.Pricing Depends how big is the app. We will 
                       develop your app for both OS(Android & IOS) platforms.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
@@ -31,9 +31,9 @@ export function ServiceSection(props){
                       develop your app for both OS(Android & IOS) platforms.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
                       develop your app for both OS(Android & IOS) platforms. " 
          imageUrl={MobileApplication}
-         order={false}></Service_index>
-         <Marginer direction="vertical" margin="3em" ></Marginer>
-        <Service_index
+         order={false}></ServiceIndex>
+         <Marginer direction="vertical" margin="5em" ></Marginer>
+        <ServiceIndex
          title="Managing Cloud"
          description="Get your cloud managed by the experience developers or solve querries regarding to it.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
          develop your app for both OS(Android & IOS) platforms.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
@@ -42,9 +42,9 @@ export function ServiceSection(props){
          develop your app for both OS(Android & IOS) platforms.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
          develop your app for both OS(Android & IOS) platforms." 
          imageUrl={cloudHosting}
-         order={true}></Service_index>
-         <Marginer direction="vertical" margin="3em" ></Marginer>
-        <Service_index
+         order={true}></ServiceIndex>
+         <Marginer direction="vertical" margin="5em" ></Marginer>
+        <ServiceIndex
          title="Front-end WebDevlopment"
          description="Get your cloud managed by the experience developers or solve querries regarding to it.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
          develop your app for both OS(Android & IOS) platforms.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
@@ -53,9 +53,9 @@ export function ServiceSection(props){
          develop your app for both OS(Android & IOS) platforms.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
          develop your app for both OS(Android & IOS) platforms." 
          imageUrl={FrontEndWeb}
-         order={false}></Service_index>
-         <Marginer direction="vertical" margin="3em" ></Marginer>
-        <Service_index
+         order={false}></ServiceIndex>
+         <Marginer direction="vertical" margin="5em" ></Marginer>
+        <ServiceIndex
          title="Back-end WebDevlopment"
          description="Get your cloud managed by the experience developers or solve querries regarding to it.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
          develop your app for both OS(Android & IOS) platforms.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
@@ -64,9 +64,9 @@ export function ServiceSection(props){
          develop your app for both OS(Android & IOS) platforms.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
          develop your app for both OS(Android & IOS) platforms." 
          imageUrl={BackeEndWeb}
-         order={true}></Service_index>
-         <Marginer direction="vertical" margin="3em" ></Marginer>
-        <Service_index
+         order={true}></ServiceIndex>
+         <Marginer direction="vertical" margin="5em" ></Marginer>
+        <ServiceIndex
          title="Maintenance"
          description="Get your cloud managed by the experience developers or solve querries regarding to it.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
          develop your app for both OS(Android & IOS) platforms.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
@@ -75,6 +75,6 @@ export function ServiceSection(props){
          develop your app for both OS(Android & IOS) platforms.You will get your app customised for your needs.Pricing Depends how big is the app. We will 
          develop your app for both OS(Android & IOS) platforms." 
          imageUrl={Maintenance}
-         order={false}></Service_index>
+         order={false}></ServiceIndex>
     </ServiceContainer>)
 }
