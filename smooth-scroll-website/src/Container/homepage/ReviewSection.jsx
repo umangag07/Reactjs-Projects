@@ -22,20 +22,77 @@ const ReviewContainer = styled(Element)`
   min-height: 700px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color:#000;
+ 
   margin-left: 10vh;
   margin-right: 10vh;
+  @media (max-width:768px){
+    @media (min-width:377px){
+    
+    margin-left:0px;
+    margin-right:0px;
+    min-height: 900px;
+    
+  }}
+
+    @media (max-width:376px){
+    
+    margin-left:0px;
+    margin-right:0px;
+    min-height: 00px;
+    
+  }
+  
+  @media (max-width:415px){
+    
+    margin-left:0px;
+    margin-right:0px;
+    min-height: 00px;
+  }
 `;
 const StyledCarousalProvider = styled(CarouselProvider)`
   width: 70%; 
+ 
+ 
+  @media (max-width:768px){
+    @media (min-width:377px){
+    padding-left: 60px;
+    padding-right:10px;
+    margin-left:40px;
+    margin-right:40px;
+    width:100%;
+    height:60%;
+    align-self:center;
+  }}
+  @media (max-width:376px){
+    padding-left: 10px;
+    padding-right:10px;
+    margin-left:5px;
+    margin-right:0px;
+    width:100%;
+    height:90%;
+    align-self:center;
+  }
+  @media (max-width:415px){
+    @media (min-width:377px){
+    padding-left: 2px;
+    padding-right:0px;
+    
+    width:98%;
+    height:90%;
+    align-self:center;
+  }}
 `;
 const StyledSlide = styled(Slide)`
  .carousel__dot--selected {
      display:flex;
-     justify-content:center;    
+     justify-content:center;   
+    
  }
+ 
 `;
 const StyledDotGroup = styled(DotGroup)`
+
   button {
     width: 2px;
     height: 5px;
@@ -55,16 +112,25 @@ const StyledDotGroup = styled(DotGroup)`
   }
 `;
 
+// function getWindowDimension(){
+//   const{innerWidth: width, innerHeight: height} = window;
+//   console.log(width , height );
+  
+// }
 export function ReviewSection() {
+ 
+  
+  const VisibleSlide = 1;
   return (
+    
     <ReviewContainer name="ReviewConatiner">
       <SectionTitle>Reviews About Us</SectionTitle>
       <Marginer direction="vertical" margin="2em" />
       <StyledCarousalProvider
-        naturalSlideHeight={240}
+        naturalSlideHeight={210}
         naturalSlideWidth={200}
         totalSlides={4}
-        visibleSlides={2}
+        visibleSlides={VisibleSlide}
       >
         <Slider>
           <StyledSlide index={0}>

@@ -13,6 +13,22 @@ const ReviewCardConatainer = styled.div`
   border-radius: 5px;
   margin: 5px 2em;
   position: relative;
+
+  @media (max-width:376px){
+    width: 98%;
+  height: 100%;
+  margin: 0px 0em;
+  box-shadow: 0px 0px 10px rgba(88, 80, 80, 0.1);
+  }
+  @media (max-width:415px){
+    @media (min-width:377px){
+    width: 99%;
+  height: 100%;
+  margin: 0px 0em;
+  box-shadow: 0px 0px 10px rgba(88, 80, 80, 0.1);
+  }
+  }
+ 
 `;
 
 const QuoteIcon = styled.div`
@@ -21,6 +37,12 @@ const QuoteIcon = styled.div`
   left: 15px;
   font-size: 30px;
   color: ${theme.color5};
+
+  @media (max-width:376px){
+    top: 5px;
+  left: 10px;
+  font-size: 20px;
+  }
 `;
 const Reviewtext = styled.p`
   position: absolute;
@@ -28,14 +50,41 @@ const Reviewtext = styled.p`
   color: ${theme.color2};
   padding-left: 12px;
   padding-right: 13px;
+  margin-top:4em;
+  margin-bottom:10em;
+  @media (max-width:768px){
+    @media (min-width:377px){
+    margin-top:3em;
+    margin-bottom:1em;
+  }}
+  @media (max-width:376px){
+    
+  font-size: 15px;
+  margin-top:3em;
+  margin-bottom:0em;
+  }
 `;
 const Line = styled.span`
   min-width: 80%;
   min-height: 1px;
   display: flex;
   background-color: ${theme.color5};
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin-top: 6em;
+  margin-bottom: 1em;
+
+  @media (max-width:376px){
+    
+   
+    margin-top:0em;
+    margin-bottom:0em;
+    }
+    
+  @media (max-width:415px){
+    @media (min-width:377px){
+   
+    margin-top:2em;
+    margin-bottom:1em;
+    }}
 `;
 const UserDetail = styled.div`
   display: flex;
@@ -62,7 +111,7 @@ export function CardIndex(props) {
         <QuoteIcon>
           <FontAwesomeIcon icon={faQuoteLeft} />
         </QuoteIcon>
-        <Marginer direction="vertical" margin="4em" />
+        {/* <Marginer direction="vertical" margin="4em" /> */}
         <Reviewtext>{Review}</Reviewtext>
         <Marginer direction="vertical" margin="19em" />
         <Line />
