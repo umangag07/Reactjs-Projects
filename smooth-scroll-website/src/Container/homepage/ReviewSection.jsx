@@ -22,16 +22,16 @@ const ReviewContainer = styled(Element)`
   min-height: 700px;
   display: flex;
   flex-direction: column;
-  background-color:#000;
+  
  
   margin-left: 10vh;
   margin-right: 10vh;
   @media (max-width:768px){
-    @media (min-width:377px){
+    @media (min-width:415px){
     
     margin-left:0px;
     margin-right:0px;
-    min-height: 900px;
+    min-height: 800px;
     
   }}
 
@@ -55,13 +55,13 @@ const StyledCarousalProvider = styled(CarouselProvider)`
  
  
   @media (max-width:768px){
-    @media (min-width:377px){
-    padding-left: 60px;
-    padding-right:10px;
+    @media (min-width:415px){
+    padding-left: 80px;
+    padding-right:90px;
     margin-left:40px;
     margin-right:40px;
-    width:100%;
-    height:60%;
+    width:90%;
+    height:600px;
     align-self:center;
   }}
   @media (max-width:376px){

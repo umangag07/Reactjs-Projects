@@ -13,7 +13,14 @@ const ReviewCardConatainer = styled.div`
   border-radius: 5px;
   margin: 5px 2em;
   position: relative;
-
+   
+  @media (max-width:768px){
+    @media (min-width:415px){
+      width: 98%;
+      height: 100%;
+      margin: 0px 0em;
+  box-shadow: 0px 0px 10px rgba(88, 80, 80, 0.1);
+  }}
   @media (max-width:376px){
     width: 98%;
   height: 100%;
@@ -53,8 +60,8 @@ const Reviewtext = styled.p`
   margin-top:4em;
   margin-bottom:10em;
   @media (max-width:768px){
-    @media (min-width:377px){
-    margin-top:3em;
+    @media (min-width:415px){
+    margin-top:4em;
     margin-bottom:1em;
   }}
   @media (max-width:376px){
@@ -72,6 +79,11 @@ const Line = styled.span`
   margin-top: 6em;
   margin-bottom: 1em;
 
+  @media (max-width:768px){
+    @media (min-width:415px){
+      margin-top:10em;
+    margin-bottom:0.8em
+  }}
   @media (max-width:376px){
     
    
