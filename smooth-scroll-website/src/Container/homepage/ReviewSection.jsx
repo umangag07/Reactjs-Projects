@@ -19,9 +19,11 @@ import User2 from '../../Assets/Logo/User2.svg'
 import User3 from '../../Assets/Logo/User3.svg'
 import User4 from '../../Assets/Logo/User4.svg'
 const ReviewContainer = styled(Element)`
-  min-height: 700px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
+  
+  
   
  
   margin-left: 10vh;
@@ -44,15 +46,22 @@ const ReviewContainer = styled(Element)`
   }
   
   @media (max-width:415px){
-    
+    @media (min-width:376px){
     margin-left:0px;
     margin-right:0px;
-    min-height: 00px;
-  }
+    min-height: 700px;
+  }}
 `;
 const StyledCarousalProvider = styled(CarouselProvider)`
-  width: 70%; 
+  width: 50%;
+
  
+  justify-content:center;
+  margin-left:280px;
+  margin-right:280px;
+  padding-left:40px;
+  padding-right:20px;
+  padding-bottom:0px;
  
   @media (max-width:768px){
     @media (min-width:415px){
@@ -78,8 +87,8 @@ const StyledCarousalProvider = styled(CarouselProvider)`
     padding-left: 2px;
     padding-right:0px;
     
-    width:98%;
-    height:90%;
+    width:100%;
+    height:500px;
     align-self:center;
   }}
 `;

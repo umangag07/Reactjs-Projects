@@ -6,13 +6,14 @@ import { theme } from "../../styles";
 import { Marginer } from "../Marginer/Index";
 
 const ReviewCardConatainer = styled.div`
-  width: 370px;
-  height: 500px;
+  width: 80%  ;
+  height: 100%;
   background-color: ${theme.color1};
   box-shadow: 0px 0px 10px rgba(88, 80, 80, 0.3);
   border-radius: 5px;
-  margin: 5px 2em;
+  margin: 3em  3em;
   position: relative;
+  padding-bottom:0px;
    
   @media (max-width:768px){
     @media (min-width:415px){
@@ -30,7 +31,7 @@ const ReviewCardConatainer = styled.div`
   @media (max-width:415px){
     @media (min-width:377px){
     width: 99%;
-  height: 100%;
+  height: 700px;
   margin: 0px 0em;
   box-shadow: 0px 0px 10px rgba(88, 80, 80, 0.1);
   }
@@ -76,7 +77,7 @@ const Line = styled.span`
   min-height: 1px;
   display: flex;
   background-color: ${theme.color5};
-  margin-top: 6em;
+  margin-top: 10em;
   margin-bottom: 1em;
 
   @media (max-width:768px){
