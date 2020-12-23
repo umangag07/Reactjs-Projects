@@ -1,6 +1,6 @@
 
 import './App.css';
-import HomePage from './Containers/Index';
+import HomePage from './Containers/HomePage/Index.jsx';
 
 function App() {
   return (
