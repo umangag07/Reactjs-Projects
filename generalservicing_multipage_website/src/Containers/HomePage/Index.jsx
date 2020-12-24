@@ -1,7 +1,7 @@
-import React from 'react'
-import Navbar from '../../components/Navbar';
-import TopSection from './TopSection';
-import styled from 'styled-components'
+import React from "react";
+import Navbar from "../../components/Navbar";
+import TopSection from "./TopSection";
+import styled from "styled-components";
 const Wrapper = styled.div`
   width: 100%;
   min-height: 100%;
@@ -11,21 +11,17 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-   
 
 function HomePage() {
-    return (
-        <>
-        
-        <Wrapper>
-        <Navbar/> 
-        <TopSection/>
-        </Wrapper>
-        
-        
-       
-        </>
-    )
+  return (
+    <>
+      <Wrapper>
+        <TopSection>
+          <Navbar />
+        </TopSection>
+      </Wrapper>
+    </>
+  );
 }
 
-export default HomePage
+export default HomePage;

@@ -5,6 +5,7 @@ import landingPagePhoto from "../../Assets/Illustrations/landing_page.svg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap'
 import Marginer from '../../components/Marginer'
+
 const TopConatiner = styled.div`
   display: flex;
   width: 100%;
@@ -18,6 +19,7 @@ const Background = styled.div`
   height: 100%;
   background-color: rgba(38, 70, 84, 0.7);
   display: flex;
+  flex-direction:column;
 `;
 const InnerSection = styled.div`
   width: 100%;
@@ -54,11 +56,13 @@ const DisplayImg = styled.div`
     height: 100%;
   }
 `;
-function TopSection() {
+function TopSection(props) {
+    const {children} = props
   return (
     <>
       <TopConatiner>
         <Background>
+         {children}
           <InnerSection>
             <DisplayText>
             <Marginer direction="vertical" margin="29px"/>
