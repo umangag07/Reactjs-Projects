@@ -4,15 +4,33 @@
       "id": 1,
       "title": "I will clean your garden",
       "rating": 4,
-      "thumbnailUrl":"http://localhost:5000/landing-page.jpg",
+      "thumbnailUrl":"http://localhost:5000/gardencleaning.jpg",
+      "rate":"$20",
       "specialist": { "id": 1, "fullname": "Zack brown" }
     },
     {
       "id": 2,
       "title": "I will clean your car",
       "rating": 3.5,
-      "thumbnailUrl":"http://localhost:5000/landing-page.jpg",
+      "thumbnailUrl":"http://localhost:5000/carwash.jpg",
+      "rate":"$40",
       "specialist": { "id": 2, "fullname": "Britty Wright" }
+    },
+    {
+      "id": 3,
+      "title": "House Cleaning",
+      "rating": 4.2,
+      "thumbnailUrl":"http://localhost:5000/housecleaning.jpg",
+      "rate":"$15",
+      "specialist": { "id": 3, "fullname": "Joe Tribbiani" }
+    },
+    {
+      "id": 2,
+      "title": "Gocery Shopping",
+      "rating": 3,
+      "thumbnailUrl":"http://localhost:5000/shopping.jpg",
+      "rate":"$8",
+      "specialist": { "id": 4, "fullname": "Ross geller" }
     }
   ]
 }
