@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import LandingPhoto from "../../Assets/Photos/landing-page.jpg";
 import landingPagePhoto from "../../Assets/Illustrations/landing_page.svg";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Button} from 'react-bootstrap'
+import Marginer from '../../components/Marginer'
 const TopConatiner = styled.div`
   display: flex;
   width: 100%;
@@ -29,7 +32,19 @@ const DisplayText = styled.div`
   height: 20em;
   font-size: 20px;
   text-align: center;
-  background-color: beige;
+  
+`;
+const DisplayTitle = styled.div`
+  font-size: 43px;
+  text-align: center;
+  color:#df5c5c;
+  
+`;
+const DisplayInnerText = styled.div`
+  font-size: 22px;
+  text-align: center;
+  color:#1c0c36;
+  
 `;
 const DisplayImg = styled.div`
   width: 40em;
@@ -45,7 +60,19 @@ function TopSection() {
       <TopConatiner>
         <Background>
           <InnerSection>
-            <DisplayText></DisplayText>
+            <DisplayText>
+            <Marginer direction="vertical" margin="29px"/>
+              <DisplayTitle>Welcome to DoorStep Servicing</DisplayTitle>
+              <Marginer direction="vertical" margin="16px"/>
+              <DisplayInnerText>
+                We provide you with best people for your SERVICES
+                You just have to find the right service which you want to be done just by a 
+                click from your phone.
+               
+               </DisplayInnerText>
+               <Marginer direction="vertical" margin="16px"/>
+              <Button variant="info">Get Started</Button>
+            </DisplayText>
             <DisplayImg>
               <img src={landingPagePhoto} />
             </DisplayImg>
