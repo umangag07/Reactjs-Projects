@@ -1,0 +1,18 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "I will clean your garden",
+      "rating": 4,
+      "thumbnailUrl":"http://localhost:5000/landing-page.jpg",
+      "specialist": { "id": 1, "fullname": "Zack brown" }
+    },
+    {
+      "id": 2,
+      "title": "I will clean your car",
+      "rating": 3.5,
+      "thumbnailUrl":"http://localhost:5000/landing-page.jpg",
+      "specialist": { "id": 2, "fullname": "Britty Wright" }
+    }
+  ]
+}

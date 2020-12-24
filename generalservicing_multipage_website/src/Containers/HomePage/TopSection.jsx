@@ -78,7 +78,7 @@ function TopSection(props) {
               <Button variant="info">Get Started</Button>
             </DisplayText>
             <DisplayImg>
-              <img src={landingPagePhoto} />
+              <img src={landingPagePhoto} alt="Landing"/>
             </DisplayImg>
           </InnerSection>
         </Background>

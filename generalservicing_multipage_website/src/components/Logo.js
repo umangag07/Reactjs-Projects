@@ -29,7 +29,7 @@ function Logo(props) {
         
         <>
         <Logoconatiner width={width} height={height} fontSize={fontSize}>
-            <LogoImage><img src={LogoIcon}/></LogoImage>
+            <LogoImage><img src={LogoIcon} alt="Logo"/></LogoImage>
             <LogoText>DoorStep Servicing</LogoText>
         </Logoconatiner>
             
