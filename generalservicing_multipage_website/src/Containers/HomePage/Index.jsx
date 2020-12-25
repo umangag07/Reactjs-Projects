@@ -4,6 +4,7 @@ import TopSection from "./TopSection";
 import styled from "styled-components";
 import "../../index.css";
 import ServiceSection from "./ServiceSection";
+import SpecialistSection from "./SpecialistSection";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -23,6 +24,7 @@ function HomePage() {
           <Navbar />
         </TopSection>
        <ServiceSection/>
+       <SpecialistSection/>
       </Wrapper>
     </>
   );

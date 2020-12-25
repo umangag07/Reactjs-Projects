@@ -19,18 +19,18 @@ const LogoText = styled.div`
      margin:0;
      font-size:${({fontSize})=> fontSize ? fontSize: "30px"};
      font-weight:700;
-     color:#f1f1f1;
+     color:${props=>props.color?props.color:"#f1f1f1"};
      font-family: 'Cabin', sans-serif;
 `;
 
 function Logo(props) {
-    const {width,height,fontSize} = props
+    const {width,height,fontSize,color} = props
     return (
         
         <>
         <Logoconatiner width={width} height={height} fontSize={fontSize}>
             <LogoImage><img src={LogoIcon} alt="Logo"/></LogoImage>
-            <LogoText>DoorStep Servicing</LogoText>
+            <LogoText color={color}>DoorStep Servicing</LogoText>
         </Logoconatiner>
             
         </>

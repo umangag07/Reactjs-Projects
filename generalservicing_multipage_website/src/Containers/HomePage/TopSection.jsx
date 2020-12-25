@@ -5,6 +5,7 @@ import landingPagePhoto from "../../Assets/Illustrations/landing_page.svg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap'
 import Marginer from '../../components/Marginer'
+import '../../index.css'
 
 const TopConatiner = styled.div`
   display: flex;
@@ -13,6 +14,7 @@ const TopConatiner = styled.div`
   background: url(${LandingPhoto});
   background-position: 0px -170px;
   background-size: cover;
+  font-family: 'Cabin';
 `;
 const Background = styled.div`
   width: 100%;
