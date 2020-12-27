@@ -49,7 +49,7 @@ function SpecialistSection() {
             <Text size="35px" color="white">If you are a specialist and have a service to offer</Text>
             <Text size="30px" color="white">We will give you the right customers for your services.</Text>
             <Marginer direction="vertical" margin="2em"/>
-            <Button variant="dark">Register here</Button>
+            <Button variant="dark">Join As Specialist</Button>
         </DisplayText>
         <Marginer direction="horizontal" margin="5em"/>
        <StandoutImage><img src={Sp_illus} alt="sp"/></StandoutImage>

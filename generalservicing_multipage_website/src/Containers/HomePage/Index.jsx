@@ -5,6 +5,7 @@ import styled from "styled-components";
 import "../../index.css";
 import ServiceSection from "./ServiceSection";
 import SpecialistSection from "./SpecialistSection";
+import FooterSection from "./FooterSection";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -25,6 +26,7 @@ function HomePage() {
         </TopSection>
        <ServiceSection/>
        <SpecialistSection/>
+       <FooterSection/>
       </Wrapper>
     </>
   );
