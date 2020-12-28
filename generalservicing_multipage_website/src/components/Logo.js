@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import LogoIcon from '../Assets/Logo/logo.png'
 import '../index.css'
+import {Link} from 'react-router-dom'
 const Logoconatiner = styled.div`
      display:flex;
      align-items:center;
@@ -30,7 +31,7 @@ function Logo(props) {
         <>
         <Logoconatiner width={width} height={height} fontSize={fontSize}>
             <LogoImage><img src={LogoIcon} alt="Logo"/></LogoImage>
-            <LogoText color={color}>DoorStep Servicing</LogoText>
+           <Link to = "/" ><LogoText color={color}>DoorStep Servicing</LogoText></Link>
         </Logoconatiner>
             
         </>
