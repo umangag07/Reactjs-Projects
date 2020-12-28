@@ -5,6 +5,7 @@ import Sp_illus from "../../Assets/Illustrations/specialist.svg"
 import Logo from "../../components/Logo";
 import {Button} from 'react-bootstrap'
 import Marginer from "../../components/Marginer";
+import {Link} from 'react-router-dom'
 const Wrapper = styled.div`
   width: 100%;
   min-height: 100vh;
@@ -49,7 +50,7 @@ function SpecialistSection() {
             <Text size="35px" color="white">If you are a specialist and have a service to offer</Text>
             <Text size="30px" color="white">We will give you the right customers for your services.</Text>
             <Marginer direction="vertical" margin="2em"/>
-            <Button variant="dark">Join As Specialist</Button>
+            <Link to="specialistJoin"><Button variant="dark">Join As Specialist</Button></Link>
         </DisplayText>
         <Marginer direction="horizontal" margin="5em"/>
        <StandoutImage><img src={Sp_illus} alt="sp"/></StandoutImage>

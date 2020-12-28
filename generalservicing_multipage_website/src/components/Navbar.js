@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
 import { Button } from "react-bootstrap";
+import {Link} from 'react-router-dom'
 const NavbarConatiner = styled.span`
   display: flex;
   width: 90%;
@@ -38,11 +39,11 @@ function Navbar() {
         </Logoconatiner>
         <AccessibilityConatiner>
           <Items>
-            <Button variant="info">Login</Button>
+            <Link to="/customer/access"><Button variant="info">Login</Button></Link>
             
           </Items>
           <Items>
-            <Button variant="info">Register</Button>
+          <Link to="/customer/access"><Button variant="info">Register</Button></Link>
             
           </Items>
         </AccessibilityConatiner>
