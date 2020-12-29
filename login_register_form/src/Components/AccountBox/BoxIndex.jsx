@@ -24,24 +24,56 @@ const TopConatainer = styled.div`
 const Backdrop = styled.div`
   width: 160%;
   height: 550px;
-  position:absolute;
+  position: absolute;
   display: flex;
+  transform: rotate(60deg);
   flex-direction: column;
-  border-radius: 70%;
+  border-radius: 50%;
+  top: -290px;
+  left: -70px;
   background: rgb(11, 55, 162);
   background: linear-gradient(
     90deg,
-    rgba(11, 55, 162, 1) 7%,
-    rgba(5, 191, 176, 1) 48%,
-    rgba(0, 255, 218, 1) 87%
+    rgba(11, 55, 162, 1) 19%,
+    rgba(26, 159, 218, 1) 35%,
+    rgba(5, 191, 176, 1) 72%,
+    rgba(2, 126, 224, 1) 85%,
+    rgba(0, 255, 218, 1) 97%
   );
+`;
+
+const HeaderConatiner = styled.div`
+   width:100%;
+   display:flex;
+   flex-direction:column;
+   margin:0px;
+   padding:0px;
+ 
+`;
+
+const Text = styled.h2`
+    font-size:${props=>props.size? props.size:"20px"};
+    color:${props=>props.color? props.color:"white"};
+    z-index:10;
+    font-weight:600;
+    margin:0px;
+   
+    line-height:1.24;
+
+    
 `;
 function AccountBox() {
   return (
     <div>
       <BoxConatiner>
         <TopConatainer>
-          <Backdrop></Backdrop>
+          <Backdrop/>
+          <HeaderConatiner>
+              <Text size="30px" color="white">Welcome</Text>
+              <Text size="30px" color="white">Back</Text>
+              <Text size="20px" color="white">Please Login to continue</Text>
+          </HeaderConatiner>
+      
         </TopConatainer>
       </BoxConatiner>
     </div>
