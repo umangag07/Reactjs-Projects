@@ -12,6 +12,15 @@ const Footer = styled.div`
   padding: 1em;
   margin: 0px;
   justify-content: space-between;
+  @media (max-width: 290px) {
+    display:flex;
+      width:100%;
+      height:9vh;
+      padding:0px;
+      margin:0px;
+      align-items:center;
+    
+  }
   @media (max-width: 415px) {
     display:flex;
       width:100%;
@@ -21,6 +30,16 @@ const Footer = styled.div`
       align-items:center;
     
   }
+  @media (max-width: 769px) {
+    @media (min-width: 417px){
+    display:flex;
+      width:100%;
+      height:15vh;
+      padding:0px;
+      margin:0px;
+      
+      align-items:center;
+  }}
 `;
 
 const Icons = styled.div`
@@ -31,6 +50,15 @@ const Icons = styled.div`
   margin-left: 5em;
   align-items: center;
   /* background-color:gray; */
+  @media (max-width: 290px) {
+    display:flex;
+    flex-direction:column;
+      width:90px;
+      height:20px;
+      margin:0px;
+      padding:0px;
+      font-size:8.5px;
+  }
   @media (max-width: 415px) {
     display:flex;
     flex-direction:column;
@@ -40,6 +68,16 @@ const Icons = styled.div`
       padding:0px;
       font-size:8.5px;
   }
+  @media (max-width: 769px) {
+    @media (min-width: 417px){
+    display:flex;
+    flex-direction:column;
+      width:200px;
+      height:20px;
+      margin:0px;
+      padding:0px;
+      font-size:15.5px;
+  }}
 `;
 const Logo = styled.div`
     /* size:"26px"; */

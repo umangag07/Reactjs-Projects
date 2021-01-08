@@ -13,6 +13,11 @@ const AwardContainer = styled.div`
       flex-direction:column;
       height:170vh;
   }
+  @media (max-width: 769px) {
+    @media (min-width: 417px){
+    flex-direction:row;
+      height:82vh;
+  }}
 `;
 const AwardImage = styled.div`
   width: 35%;
@@ -28,22 +33,43 @@ const AwardImage = styled.div`
     width: 80%;
     height: 100%;
   }
+  @media (max-width: 290px) {
+      order:2;
+      width:100%;
+      margin:0px;
+      height:80vh;
+  }
   @media (max-width: 415px) {
       order:2;
       width:100%;
       margin:0px;
       height:80vh;
   }
+  @media (max-width: 769px) {
+    @media (min-width: 417px){
+    order:2;
+      width:50%;
+      height:70vh;
+      margin:0px;
+  }}
 `;
 const AwardDescription = styled.div`
   width: 60%;
-  height: 89vh;
+  height: 86vh;
   display: flex;
   order: 2;
   flex-direction: column;
   /* background-color: green; */
   margin: 1em;
   padding: 2px;
+  @media (max-width: 290px) {
+      order:1;
+      width:100%;
+      height:89vh;
+      margin:0px;
+      padding:0px;
+      font-size:12.5px;
+  }
   @media (max-width: 415px) {
       order:1;
       width:100%;
@@ -52,6 +78,16 @@ const AwardDescription = styled.div`
       padding:0px;
       font-size:12.5px;
   }
+  @media (max-width: 769px) {
+    @media (min-width: 417px){
+    order:2;
+      width:100%;
+      height:80vh;
+      margin:0px;
+      padding:0px;
+      font-size:17.5px;
+  }
+}
 `;
 const Text = styled.p`
   display: flex;

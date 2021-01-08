@@ -10,8 +10,13 @@ const ProductContainer = styled.div`
   align-items: center;
   @media (max-width: 415px) {
       width:100%;
-      height:90vh;
+      height:93vh;
   }
+  @media (max-width: 769px) {
+    @media (min-width: 417px){
+      width:100%;
+      height:89vh;
+  }}
 `;
 
 const Text = styled.p`
@@ -44,6 +49,11 @@ const ProductsImage = styled.div`
       width:100%;
       height:35vh;
   }
+  @media (max-width: 769px) {
+    @media (min-width: 417px){
+      width:100%;
+      height:45vh;
+  }}
 `;
 
 const LineSpan = styled.span`
