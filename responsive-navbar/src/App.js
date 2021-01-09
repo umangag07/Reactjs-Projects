@@ -7,10 +7,12 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Pricing from './pages/Pricing';
+import Navbar3 from './Components/Navbar3/Navbar3';
 function App() {
   return (
     <Router>
-      <Navbar/>
+      {/* <Navbar/> */}
+      <Navbar3/>
       <Switch>
       <Route exact path="/" component={Home}/>
       <Route exact path="/about" component={About}/>

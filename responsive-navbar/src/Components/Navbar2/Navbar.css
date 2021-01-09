@@ -40,6 +40,10 @@
     letter-spacing: 5px;
     color: #e63946;
   }
+  .logo a{
+    color:#e63946;
+    text-decoration: none;
+  }
   .burger{
     /* background-color: #4cb817; */
    
@@ -47,6 +51,7 @@
     height:3vh;
     width: 3vh;
     margin:1em;
+    align-items: center;
     color:white;
     font-size: 27px;
     cursor: pointer;
@@ -58,6 +63,12 @@
     }
   }
   @media screen and (max-width: 768px) {
+    .nav{
+      background-color: #e63946;
+    }
+    .logo a{
+        color: #101b29;
+    }
     .nav-links {
      display: flex;
      flex-direction: column;
@@ -82,6 +93,16 @@
       width:100%;
       display: table;
     }
+    .nav-links li:hover{
+      background-color:#9e2d36;
+      padding: 11px;
+      margin: 0%;
+      border-radius: 4px;
+      transition: all 0.2s ease-in-out ;
+     
+    
+    }
+   
     .burger{
       display: block;
       align-items: center;

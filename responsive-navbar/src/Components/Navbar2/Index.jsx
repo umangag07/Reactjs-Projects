@@ -9,20 +9,23 @@ function Navbar() {
     <div>
       <nav className="nav">
         <div className="logo">
-          <h1>OUR LOGO</h1>
+          <a href="/"><h1>OUR LOGO</h1></a>
         </div>
         <ul className={Clicked? 'nav-links active':'nav-links'}>
           <li>
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a href="/services">Service</a>
           </li>
           <li>
-            <a href="/">Contact Us</a>
+            <a href="/pricing">Pricing</a>
           </li>
           <li>
-            <a href="/">SignIn</a>
+            <a href="/contact">Contact Us</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
           </li>
         </ul>
         <div className="burger" onClick={()=>{setClicked(!Clicked)}}>
